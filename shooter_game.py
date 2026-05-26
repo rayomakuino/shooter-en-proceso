@@ -96,7 +96,7 @@ display.set_caption(TITULO)
 font_1 = font.Font(None, 24)
 font_2 = font.Font(None, 60)
 
-goal = GameSprite((GOALD_IMG), 300, 50, 90, 90, 5)
+goal = GameSprite((GOALD_IMG), randint(0, ANCHO - 90), 20, 90, 90, 5)
 player = Player(PLAYER_IMG, (ANCHO - 60) // 2, ALTO - 60, 60, 60, 5)
 balas = sprite.Group()
 aliens = sprite.Group()
